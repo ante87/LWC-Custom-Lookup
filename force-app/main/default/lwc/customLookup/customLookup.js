@@ -6,7 +6,7 @@ import {LightningElement, api, track} from 'lwc';
 import getLookupResults from '@salesforce/apex/CustomLookupController.getLookupResults';
 
 export default class CustomLookup extends LightningElement {
-    @api objectApiName;
+    @api objectName;
     @api numOfChars = 3;
     @api iconName;
     @api displayFieldName = "Name";
@@ -73,7 +73,7 @@ export default class CustomLookup extends LightningElement {
             let fieldName = this.displayFieldName;
             let setSelectedRecord = this.prepopulateRecordId != null;
             getLookupResults({displayFieldName: this.displayFieldName,
-                              objectApiName: this.objectApiName,
+                              objectName: this.objectName,
                               extraFilters: this.extraFilters,
                               extraFields: this.extraFields,
                               searchKeyword: this.searchKeyword,

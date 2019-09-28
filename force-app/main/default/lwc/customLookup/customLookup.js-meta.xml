@@ -10,7 +10,7 @@
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
             <property name="lookupLabel" label="Lookup Label" type="String" required="true"/>
-            <property name="objectApiName" label="Object Api Name" type="String" required="true"/>
+            <property name="objectName" label="Object Api Name" type="String" required="true"/>
             <property name="displayFieldName" label="Field To Display" type="String" required="true"/>
             <property name="numOfChars" label="Minimum nuber of chars" type="Integer"/>
             <property name="iconName" label="Icon Name" type="String"/>
