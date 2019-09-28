@@ -10,6 +10,7 @@ export default class CustomLookup extends LightningElement {
     @api numOfChars = 3;
     @api iconName;
     @api displayFieldName = "Name";
+    @api lookupLabel;
     @track prepopulateRecordId;
 
     @api extraFields;
