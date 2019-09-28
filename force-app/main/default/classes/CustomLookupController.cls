@@ -16,7 +16,7 @@ public with sharing class CustomLookupController {
         if (extraFieldsSafe != null) sQuery += ', ' + extraFieldsSafe;
         sQuery += ' FROM ' + ObjectNameSafe;
         if (prepopulateId == null) {
-            sQuery += ' WHERE ' + displayFieldNameSafe + ' LIKE :searchKey AND ' + extraFiltersSafe + ' ORDER BY CreatedDate DESC LIMIT 10';
+            sQuery += ' WHERE ' + displayFieldNameSafe + ' LIKE :searchKey AND ' + extraFiltersSafe + ' ORDER BY ' + displayFieldNameSafe + ' ASC LIMIT 10';
         } else {
             sQuery += ' WHERE Id = :prepopulateId';
         }
